@@ -14,29 +14,17 @@
 </head>
 
 <body>
-  <section class="block">
-    <header class="block__header">
-      <h2 class="block__heading">Heading</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur amet ullam, natus aliquid a illum
-        mollitia eaque? Vel, asperiores!</p>
-    </header>
-    <div style="width: 30%;padding: 4rem;">
-      <div class="card card--secondary">
-          <header class="card__header">Card Title</header>
-          <div class="card__body">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio cupiditate sunt nesciunt similique sequi
-                  dolore? Dignissimos laboriosam quam neque officiis!</p>
-          </div>
-      </div>
-  </div>
-  </section>
-  <section class="block block--dark block--skewed-left" >
-    <div class="container">
-      <h2 class="block__heading">Heading</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur amet ullam, natus aliquid a illum
-        mollitia eaque? Vel, asperiores!</p>
-    </div>
-  </section>
+  <nav class="nav collapsible ">
+    <a href="/"><img src="/css/images/logo.svg" alt=""></a>
+    </svg><svg class="icon icon--primary nav__toggler">
+      <use xlink:href="css\images\sprite.svg#menu"></use>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hoisting</a></li>
+        <li class="nav__item"><a href="#">VPs</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+  </nav>
 </body>
-
+<script src="/css/js/main.js"></script>
 </html>
