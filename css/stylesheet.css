@@ -204,7 +204,10 @@ a {
 .btn--accent:hover {
   background: #ec3000;
 }
-
+.btn--stretched {
+padding-left: 6rem;
+padding-right: 6rem;
+}
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -381,10 +384,9 @@ a {
 }
 .quote__organization {
   color: var(--color-headings);
-  opacity: .4;
+  opacity: 0.4;
   font-size: 2rem;
   font-style: normal;
-
 }
 
 .quote__line {
@@ -396,7 +398,7 @@ a {
   .quote {
     font-size: 2rem;
   }
-  .quote__author{
+  .quote__author {
     font-size: 2.4rem;
   }
   .quote__organization {
@@ -412,12 +414,12 @@ a {
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -426,7 +428,7 @@ a {
   padding: 3rem;
 }
 
-.testimonial__image >img {
+.testimonial__image > img {
   width: 100%;
 }
 
@@ -435,17 +437,67 @@ a {
 }
 
 .testimonial__image > .icon-container {
-  position:absolute;
-  top:3rem;
+  position: absolute;
+  top: 3rem;
   right: -32px;
 }
 
 @media screen and (min-width: 768px) {
-  .testimonial .quote, 
-  .testimonial .quote__author{
+  .testimonial .quote,
+  .testimonial .quote__author {
     font-size: 2.4rem;
   }
   .testimonial .quote {
     margin-left: 6rem;
+  }
+}
+/* Callouts */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+.callout--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.callout__heading {
+  margin-top: 0;
+  color: white;
+  font-size: 3rem;
+}
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+.callout__content {
+  text-align: center;
+}
+
+/* Collapsible */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+}
+
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2{
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-content: start;
+    margin: 0 2rem;
   }
 }
